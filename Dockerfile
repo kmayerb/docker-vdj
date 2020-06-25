@@ -8,3 +8,8 @@ RUN unzip vdjtools-1.2.1.zip
 ENV PATH $PATH:$HOME/vdjtools-1.2.1
 RUN chmod 777 vdjtools-1.2.1/vdjtools
 RUN vdjtools Rinstall
+
+RUN wget https://github.com/antigenomics/vdjmatch/releases/download/1.3.1/vdjmatch-1.3.1.zip
+RUN unzip vdjmatch-1.3.1.zip
+ENV PATH $PATH:$HOME/vdjmatch-1.3.1
+RUN chmod 777 vdjmatch-1.3.1/vdjmatch
