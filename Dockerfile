@@ -13,3 +13,5 @@ RUN wget https://github.com/antigenomics/vdjmatch/releases/download/1.3.1/vdjmat
 RUN unzip vdjmatch-1.3.1.zip
 ENV PATH $PATH:$HOME/vdjmatch-1.3.1
 RUN chmod 777 vdjmatch-1.3.1/vdjmatch
+
+RUN mkdir data
